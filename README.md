@@ -13,7 +13,7 @@
 
 ## WHAT YOU'RE LOOKING AT
 
-This repository chronicles every session, every lab, every task from ITI's Data Engineering bootcamp. No fluff. No filler. Just pure technical grind documented in real-time.
+This repository will chronicle every session, every lab, every task from ITI's Data Engineering Intensive Code Camp. 6 months. No filler. Just pure technical grind documented in real-time.
 
 **The Journey:** 500+ hours compressed into 6 major zones  
 **The Goal:** Transform from beginner to production-ready data engineer  
