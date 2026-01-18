@@ -1,0 +1,13 @@
+Hi
+Hi
+Name: Mona
+Age: 25
+Faculty: Engineering
+Name: Mona
+Age: 25
+Faculty: Engineering
+------------------------------------------------
+Courses :
+Php
+Python
+Html
