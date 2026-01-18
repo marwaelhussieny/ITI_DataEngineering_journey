@@ -1,0 +1,102 @@
+<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f1e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6b9d;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="200" fill="url(#bg)"/>
+  
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="50" x2="800" y2="50" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="0" y1="100" x2="800" y2="100" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="0" y1="150" x2="800" y2="150" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="200" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="400" y1="0" x2="400" y2="200" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="200" stroke="#00ff88" stroke-width="0.5"/>
+  </g>
+
+  <!-- Pixel art server -->
+  <g transform="translate(50, 70)">
+    <rect x="0" y="0" width="8" height="8" fill="#00ff88"/>
+    <rect x="8" y="0" width="8" height="8" fill="#00ff88"/>
+    <rect x="16" y="0" width="8" height="8" fill="#00ff88"/>
+    <rect x="0" y="8" width="8" height="8" fill="#00ff88"/>
+    <rect x="8" y="8" width="8" height="8" fill="#00d4ff"/>
+    <rect x="16" y="8" width="8" height="8" fill="#00ff88"/>
+    <rect x="0" y="16" width="8" height="8" fill="#00ff88"/>
+    <rect x="8" y="16" width="8" height="8" fill="#00d4ff"/>
+    <rect x="16" y="16" width="8" height="8" fill="#00ff88"/>
+    <rect x="0" y="24" width="8" height="8" fill="#00ff88"/>
+    <rect x="8" y="24" width="8" height="8" fill="#00ff88"/>
+    <rect x="16" y="24" width="8" height="8" fill="#00ff88"/>
+  </g>
+
+  <!-- Main title -->
+  <text x="400" y="80" font-family="monospace" font-size="42" font-weight="bold" 
+        fill="url(#textGrad)" text-anchor="middle" filter="url(#glow)">
+    ITI DATA ENGINEERING
+    <animate attributeName="opacity" values="1;0.8;1" dur="2s" repeatCount="indefinite"/>
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="115" font-family="monospace" font-size="18" 
+        fill="#00d4ff" text-anchor="middle">
+    THE COMPLETE JOURNEY
+  </text>
+
+  <!-- Stats -->
+  <g transform="translate(250, 140)">
+    <text x="0" y="0" font-family="monospace" font-size="14" fill="#00ff88">100% COMPLETE</text>
+    <text x="140" y="0" font-family="monospace" font-size="14" fill="#ff6b9d">24 SKILLS</text>
+    <text x="240" y="0" font-family="monospace" font-size="14" fill="#00d4ff">500+ HOURS</text>
+  </g>
+
+  <!-- Pixel art cloud -->
+  <g transform="translate(720, 75)">
+    <rect x="8" y="0" width="8" height="8" fill="#00d4ff" opacity="0.8"/>
+    <rect x="0" y="8" width="8" height="8" fill="#00d4ff" opacity="0.8"/>
+    <rect x="8" y="8" width="8" height="8" fill="#00d4ff" opacity="0.8"/>
+    <rect x="16" y="8" width="8" height="8" fill="#00d4ff" opacity="0.8"/>
+    <rect x="24" y="8" width="8" height="8" fill="#00d4ff" opacity="0.8"/>
+    <rect x="0" y="16" width="8" height="8" fill="#00d4ff" opacity="0.8"/>
+    <rect x="24" y="16" width="8" height="8" fill="#00d4ff" opacity="0.8"/>
+  </g>
+
+  <!-- Animated particles -->
+  <circle cx="150" cy="30" r="2" fill="#00ff88" opacity="0.6">
+    <animate attributeName="cy" values="30;20;30" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="650" cy="170" r="2" fill="#ff6b9d" opacity="0.6">
+    <animate attributeName="cy" values="170;160;170" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="180" r="2" fill="#00d4ff" opacity="0.6">
+    <animate attributeName="cx" values="300;310;300" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="500" cy="25" r="2" fill="#00ff88" opacity="0.6">
+    <animate attributeName="cx" values="500;490;500" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Progress bar decoration -->
+  <rect x="50" y="185" width="700" height="4" fill="#0f4c75" rx="2"/>
+  <rect x="50" y="185" width="700" height="4" fill="url(#textGrad)" rx="2">
+    <animate attributeName="width" values="0;700" dur="2s" fill="freeze"/>
+  </rect>
+</svg>
